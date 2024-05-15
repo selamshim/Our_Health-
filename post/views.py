@@ -5,4 +5,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def my_post(request):
-  return HttpResponse("hello posts")
+  return HttpResponse("helloo posts")
