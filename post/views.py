@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from django.views import generic
+from .models import Issue
 
 # Create your views here.
-
-def my_post(request):
-  return HttpResponse("helloo posts")
+class IssueList(generic.ListView):
+       model = Issue
